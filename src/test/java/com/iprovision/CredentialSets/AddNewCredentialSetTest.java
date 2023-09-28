@@ -40,7 +40,6 @@ public class AddNewCredentialSetTest extends BaseClass {
 		csp.enterAllRequiredDetails(driver, transType, name, username, password, portNo, timeOut);
 		
 		// Step 5 : Validate
-		System.out.println("Hiii");
 		String message = csp.getValidationMessage();
 		System.out.println(message+" --- Credential Set is Created Sucessfully --- ");
 		csp.selectAnyCredentialSet(driver);
