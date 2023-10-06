@@ -29,10 +29,9 @@ public class AddNewCredentialProfileTest extends BaseClass {
 		// Step 4 : Enter all required details & Click on Create Set Button
 		String profileName = eUtil.readDataFromExcel("Create New Credential Profile", 1, 0);
 		String description = eUtil.readDataFromExcel("Create New Credential Profile", 1, 1);
-		String platform = eUtil.readDataFromExcel("Create New Credential Profile", 1, 2);
-		String function = eUtil.readDataFromExcel("Create New Credential Profile", 1, 3);
+		String connectionType = eUtil.readDataFromExcel("Create New Credential Profile", 1, 2);
 		String credentialSetName = eUtil.readDataFromExcel("Add New Credential Set", 1, 1);
-		cpp.enterAllRequiredDetails(driver, profileName, description, platform, function, credentialSetName);
+		cpp.enterAllRequiredDetails(driver, profileName, description, connectionType, credentialSetName);
 		
 		// Step 5 : Validate
 		String message = cpp.getValidationMessage();

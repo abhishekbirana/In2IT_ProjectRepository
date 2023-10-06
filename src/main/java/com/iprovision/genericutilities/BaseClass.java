@@ -152,8 +152,8 @@ public class BaseClass {
 	public void asConfig()
 	{
 		
-		EmailSend es = new EmailSend();
-		es.sendingEmail("abhishek.birana@in2ittech.com",null,"Automation Testing through Jenkins","This is sample message for Testing Purpose");
+//		EmailSend es = new EmailSend();
+//		es.sendingEmail("abhishek.birana@in2ittech.com",null,"Automation Testing through Jenkins","This is sample message for Testing Purpose");
 		System.out.println(" =====> Database closed Successfully <===== ");
 	}
 	

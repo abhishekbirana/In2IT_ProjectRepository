@@ -30,10 +30,9 @@ public class UpdateCredentialProfileTest extends BaseClass {
 		
 		// Step 5 : Edit the required details & Click on Update Profile Button
 		String description = eUtil.readDataFromExcel("Create New Credential Profile", 1, 1);
-		String platform = eUtil.readDataFromExcel("Create New Credential Profile", 1, 2);
-		String function = eUtil.readDataFromExcel("Create New Credential Profile", 1, 3);
+		String connectionType = eUtil.readDataFromExcel("Create New Credential Profile", 1, 2);
 		String credentialSetName = eUtil.readDataFromExcel("Add New Credential Set", 1, 1);
-		cpp.editRequiredDetails(driver, description, platform, function, credentialSetName);
+		cpp.editRequiredDetails(driver, description, connectionType, credentialSetName);
 		
 	}
 }
