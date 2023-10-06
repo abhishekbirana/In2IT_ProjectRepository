@@ -41,10 +41,10 @@ public class AddNewCredentialProfileWithCredentialSetTest extends BaseClass {
 		// Step 5 : Validate
 		String message = csp.getValidationMessage();
 		System.out.println(message+" --- Credential Set is Created Sucessfully --- ");
-//		csp.selectAnyCredentialSet(driver);
-//		String credentialSetNameHeader = csp.getCredentialSetHeaderText();
-//		Assert.assertTrue(credentialSetNameHeader.contains(name));
-//		System.out.println(" --- Credential Set is Created Sucessfully with Name '"+credentialSetNameHeader+"' ---");
+		csp.selectAnyCredentialSet(driver);
+		String credentialSetNameHeader = csp.getCredentialSetHeaderText();
+		Assert.assertTrue(credentialSetNameHeader.contains(name));
+		System.out.println(" --- Credential Set is Created Sucessfully with Name '"+credentialSetNameHeader+"' ---");
 	}
 	
 	@Test(priority = 2)

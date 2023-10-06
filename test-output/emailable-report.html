@@ -9,41 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">78,618</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">79,646</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest</td><td><a href="#m0">asConfig</a></td><td rowspan="1">1696593029762</td><td rowspan="1">18</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest</td><td><a href="#m1">addNewCredentialProfile</a></td><td rowspan="1">1696592997288</td><td rowspan="1">8144</td></tr><tr class="passedeven"><td><a href="#m2">addNewCredentialSet</a></td><td rowspan="1">1696592966509</td><td rowspan="1">22931</td></tr><tr class="passedeven"><td><a href="#m3">deleteCredentialProfile</a></td><td rowspan="1">1696593013415</td><td rowspan="1">6208</td></tr><tr class="passedeven"><td><a href="#m4">deleteCredentialSet</a></td><td rowspan="1">1696593019625</td><td rowspan="1">6811</td></tr><tr class="passedeven"><td><a href="#m5">updateCredentialProfile</a></td><td rowspan="1">1696593005434</td><td rowspan="1">7980</td></tr><tr class="passedeven"><td><a href="#m6">updateCredentialSet</a></td><td rowspan="1">1696592989446</td><td rowspan="1">7839</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest</td><td><a href="#m0">addNewCredentialProfile</a></td><td rowspan="1">1696595939514</td><td rowspan="1">8034</td></tr><tr class="passedeven"><td><a href="#m1">addNewCredentialSet</a></td><td rowspan="1">1696595913516</td><td rowspan="1">18515</td></tr><tr class="passedeven"><td><a href="#m2">deleteCredentialProfile</a></td><td rowspan="1">1696595955544</td><td rowspan="1">6398</td></tr><tr class="passedeven"><td><a href="#m3">deleteCredentialSet</a></td><td rowspan="1">1696595961943</td><td rowspan="1">7115</td></tr><tr class="passedeven"><td><a href="#m4">updateCredentialProfile</a></td><td rowspan="1">1696595947550</td><td rowspan="1">7991</td></tr><tr class="passedeven"><td><a href="#m5">updateCredentialSet</a></td><td rowspan="1">1696595932040</td><td rowspan="1">7472</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#asConfig</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.length()&quot; because &quot;s&quot; is null
-	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:793)
-	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:752)
-	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:729)
-	at com.iprovision.genericutilities.EmailSend.sendingEmail(EmailSend.java:48)
-	at com.iprovision.genericutilities.BaseClass.asConfig(BaseClass.java:156)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:344)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#addNewCredentialProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#addNewCredentialSet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#deleteCredentialProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#deleteCredentialSet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#updateCredentialProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#updateCredentialSet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#addNewCredentialProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#addNewCredentialSet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#deleteCredentialProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#deleteCredentialSet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#updateCredentialProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest#updateCredentialSet</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
