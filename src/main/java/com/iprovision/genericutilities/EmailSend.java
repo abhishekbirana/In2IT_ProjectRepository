@@ -34,35 +34,36 @@ public class EmailSend
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication()
 			{
+				
 				return new PasswordAuthentication("cats4u@in2ittech.com","Support@202022");
 			}
 			}
 		);
 
  
-//		try {
-//			Message message = new MimeMessage(session);
-//			message.setFrom(new InternetAddress("cats4u@in2ittech.com"));
-//			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
-//			message.addRecipients(Message.RecipientType.CC, InternetAddress.parse(cc));
-//			message.setSubject(subject);
-//	
-//			Path fileName = Path.of("");
-//			
-//	   
-//			String str1 = Files.readString(fileName);
-//			message.setContent(str1,"text/html");
-//			System.out.println("Mail before sending:");
-//	
-//			Transport.send(message);
-//			System.out.println("Mail Sent:");
-//
-//			} catch (MessagingException e) {
-//				System.out.println("MessagingException: "+e);
-//
-//				} catch (IOException e) {
-//					e.printStackTrace();
-//					}
+		try {
+			Message message = new MimeMessage(session);
+			message.setFrom(new InternetAddress("cats4u@in2ittech.com"));
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
+			message.addRecipients(Message.RecipientType.CC, InternetAddress.parse(cc));
+			message.setSubject(subject);
+	
+			Path fileName = Path.of("");
+			
+	   
+			String str1 = Files.readString(fileName);
+			message.setContent(str1,"text/html");
+			System.out.println("Mail Before Sending:");
+	
+			Transport.send(message);
+			System.out.println("Mail Sent:");
+
+			} catch (MessagingException e) {
+				System.out.println("MessagingException: "+e);
+
+				} catch (IOException e) {
+					e.printStackTrace();
+					}
 		
 	}
 }

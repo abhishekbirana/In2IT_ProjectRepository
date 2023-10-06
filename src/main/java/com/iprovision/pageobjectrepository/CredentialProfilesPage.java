@@ -30,13 +30,10 @@ public class CredentialProfilesPage extends WebDriverUtility {
 	@FindBy(xpath = "//textarea[@formcontrolname='description']")
 	private WebElement descriptionTxtFld;
 	
-	@FindBy(xpath = "//select[@formcontrolname='platform_id']")
-	private WebElement platformDropdown;
+	@FindBy(xpath = "//select[@formcontrolname='transporttype']")
+	private WebElement connectionTypeDropdown;
 	
-	@FindBy(xpath = "//select[@formcontrolname='function_id']")
-	private WebElement functionDropdown;
-	
-	@FindBy(xpath = "//select[@formcontrolname='crendetialset']")
+	@FindBy(xpath = "//select[@formcontrolname='credentialset']")
 	private WebElement credentialSetDropdown;
 	
 	@FindBy(xpath = "//button[text()=' Create Profile ']")
@@ -98,12 +95,11 @@ public class CredentialProfilesPage extends WebDriverUtility {
 	 * @param function
 	 * @param credentialSet
 	 */
-	public void enterAllRequiredDetails(WebDriver driver, String profileName, String description, String platform, String function, String credentialSet)
+	public void enterAllRequiredDetails(WebDriver driver, String profileName, String description, String connectionType, String credentialSet)
 	{
 		profileNameTxtFld.sendKeys(profileName);
 		descriptionTxtFld.sendKeys(description);
-		handleDropdown(platformDropdown, "1: 1");
-		handleDropdown(functionDropdown, "1: 1");
+		handleDropdown(connectionTypeDropdown, "1: 1");
 		handleDropdown(credentialSet, credentialSetDropdown);
 		createProfileBtn.click();
 	}
@@ -119,11 +115,10 @@ public class CredentialProfilesPage extends WebDriverUtility {
 		jsclick(driver, editBtn);
 	}
 	
-	public void editRequiredDetails(WebDriver driver, String description, String platform, String function, String credentialSetName)
+	public void editRequiredDetails(WebDriver driver, String description, String connectionType, String credentialSetName)
 	{
 		descriptionTxtFld.sendKeys(description);
-		handleDropdown(platformDropdown, "1: 1");
-		handleDropdown(functionDropdown, "1: 1");
+		handleDropdown(connectionTypeDropdown, "1: 1");
 		handleDropdown(credentialSetName, credentialSetDropdown);
 		updateProfileBtn.click();
 		yesUpdateItBtn.click();

@@ -5,13 +5,16 @@
     <classes>
       <class name="com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest">
         <methods>
+          <include name="updateCredentialProfile"/>
           <include name="asConfig"/>
           <include name="bsConfig"/>
           <include name="bmConfig"/>
           <include name="amConfig"/>
           <include name="bcConfig"/>
-          <include name="updateCredentialSet"/>
+          <include name="addNewCredentialProfile"/>
+          <include name="deleteCredentialProfile"/>
           <include name="acConfig"/>
+          <include name="deleteCredentialSet"/>
         </methods>
       </class> <!-- com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest -->
     </classes>

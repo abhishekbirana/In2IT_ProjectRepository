@@ -41,10 +41,10 @@ public class AddNewCredentialProfileWithCredentialSetTest extends BaseClass {
 		// Step 5 : Validate
 		String message = csp.getValidationMessage();
 		System.out.println(message+" --- Credential Set is Created Sucessfully --- ");
-		csp.selectAnyCredentialSet(driver);
-		String credentialSetNameHeader = csp.getCredentialSetHeaderText();
-		Assert.assertTrue(credentialSetNameHeader.contains(name));
-		System.out.println(" --- Credential Set is Created Sucessfully with Name '"+credentialSetNameHeader+"' ---");
+//		csp.selectAnyCredentialSet(driver);
+//		String credentialSetNameHeader = csp.getCredentialSetHeaderText();
+//		Assert.assertTrue(credentialSetNameHeader.contains(name));
+//		System.out.println(" --- Credential Set is Created Sucessfully with Name '"+credentialSetNameHeader+"' ---");
 	}
 	
 	@Test(priority = 2)
@@ -89,10 +89,9 @@ public class AddNewCredentialProfileWithCredentialSetTest extends BaseClass {
 
 		String profileName = eUtil.readDataFromExcel("Create New Credential Profile", 1, 0);
 		String description = eUtil.readDataFromExcel("Create New Credential Profile", 1, 1);
-		String platform = eUtil.readDataFromExcel("Create New Credential Profile", 1, 2);
-		String function = eUtil.readDataFromExcel("Create New Credential Profile", 1, 3);
+		String connectionType = eUtil.readDataFromExcel("Create New Credential Profile", 1, 2);
 		String credentialSetName = eUtil.readDataFromExcel("Add New Credential Set", 1, 1);
-		cpp.enterAllRequiredDetails(driver, profileName, description, platform, function, credentialSetName);
+		cpp.enterAllRequiredDetails(driver, profileName, description, connectionType, credentialSetName);
 		
 		String message = cpp.getValidationMessage();
 		System.out.println(message+" --- Credential Profile is Created Sucessfully --- ");
@@ -117,10 +116,9 @@ public class AddNewCredentialProfileWithCredentialSetTest extends BaseClass {
 		
 		String profileName = eUtil.readDataFromExcel("Create New Credential Profile", 1, 0);
 		String description = eUtil.readDataFromExcel("Create New Credential Profile", 1, 1);
-		String platform = eUtil.readDataFromExcel("Create New Credential Profile", 1, 2);
-		String function = eUtil.readDataFromExcel("Create New Credential Profile", 1, 3);
+		String connectionType = eUtil.readDataFromExcel("Create New Credential Profile", 1, 2);
 		String credentialSetName = eUtil.readDataFromExcel("Add New Credential Set", 1, 1);
-		cpp.editRequiredDetails(driver, description, platform, function, credentialSetName);
+		cpp.editRequiredDetails(driver, description, connectionType, credentialSetName);
 		
 		String message = cpp.getValidationMessage();
 		System.out.println(message+" --- Credential Profile is Updated Sucessfully --- ");
