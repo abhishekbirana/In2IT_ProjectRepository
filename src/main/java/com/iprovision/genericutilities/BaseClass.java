@@ -149,11 +149,11 @@ public class BaseClass {
 	}
 	
 	@AfterSuite(alwaysRun = true)		//(groups = {"SmokeSuite","RegressionSuite"})
-	public void asConfig()
+	public void asConfig() throws IOException
 	{
 		
-		EmailSend es = new EmailSend();
-		es.sendingEmail("abhishek.birana@in2ittech.com","Gaous Mohammad Khan","Automation Testing through Jenkins","This is sample message for Testing Purpose");
+		SendMailWithAttachment smwa = new SendMailWithAttachment();
+		smwa.sendingEmail("abhishek.birana@in2ittech.com","sagar.mehra@in2ittech.com","This email sent using JavaMailer API from Automation Testing!!!","This is sample message for Testing Purpose by Abhishek Birana");
 		System.out.println(" =====> Database closed Successfully <===== ");
 	}
 	
