@@ -1,61 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-09T15:33:29 IST" name="Default suite" finished-at="2023-10-09T15:34:35 IST" duration-ms="66074">
+  <suite started-at="2023-10-17T17:23:09 IST" name="Default suite" finished-at="2023-10-17T17:23:51 IST" duration-ms="42443">
     <groups>
     </groups>
-    <test started-at="2023-10-09T15:33:29 IST" name="Default test" finished-at="2023-10-09T15:34:35 IST" duration-ms="66074">
-      <class name="com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:33:29 IST" name="bsConfig" finished-at="2023-10-09T15:33:29 IST" duration-ms="6" status="PASS">
+    <test started-at="2023-10-17T17:23:09 IST" name="Default test" finished-at="2023-10-17T17:23:51 IST" duration-ms="42443">
+      <class name="com.iprovision.CredentialProfiles.AddNewCredentialProfileTest">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileTest@5c6648b0]" started-at="2023-10-17T17:23:09 IST" name="bsConfig" finished-at="2023-10-17T17:23:09 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:33:29 IST" name="bcConfig" finished-at="2023-10-09T15:33:39 IST" duration-ms="10219" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileTest@5c6648b0]" started-at="2023-10-17T17:23:09 IST" name="bcConfig" finished-at="2023-10-17T17:23:30 IST" duration-ms="20732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:33:39 IST" name="bmConfig" finished-at="2023-10-09T15:33:40 IST" duration-ms="1105" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileTest@5c6648b0]" started-at="2023-10-17T17:23:30 IST" name="bmConfig" finished-at="2023-10-17T17:23:31 IST" duration-ms="1265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="addNewCredentialSet()[pri:1, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:33:40 IST" name="addNewCredentialSet" finished-at="2023-10-09T15:33:57 IST" duration-ms="16853" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewCredentialSet -->
-        <test-method signature="updateCredentialSet()[pri:2, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:33:57 IST" name="updateCredentialSet" finished-at="2023-10-09T15:34:04 IST" duration-ms="6836" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateCredentialSet -->
-        <test-method signature="addNewCredentialProfile()[pri:3, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:34:04 IST" name="addNewCredentialProfile" finished-at="2023-10-09T15:34:12 IST" duration-ms="7800" status="PASS">
+        <test-method signature="addNewCredentialProfile()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileTest@5c6648b0]" started-at="2023-10-17T17:23:31 IST" name="addNewCredentialProfile" finished-at="2023-10-17T17:23:49 IST" duration-ms="17958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCredentialProfile -->
-        <test-method signature="updateCredentialProfile()[pri:4, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:34:12 IST" name="updateCredentialProfile" finished-at="2023-10-09T15:34:19 IST" duration-ms="7192" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateCredentialProfile -->
-        <test-method signature="deleteCredentialProfile()[pri:5, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:34:19 IST" name="deleteCredentialProfile" finished-at="2023-10-09T15:34:25 IST" duration-ms="6102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteCredentialProfile -->
-        <test-method signature="deleteCredentialSet()[pri:6, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:34:25 IST" name="deleteCredentialSet" finished-at="2023-10-09T15:34:32 IST" duration-ms="6689" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteCredentialSet -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:34:32 IST" name="amConfig" finished-at="2023-10-09T15:34:33 IST" duration-ms="869" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileTest@5c6648b0]" started-at="2023-10-17T17:23:49 IST" name="amConfig" finished-at="2023-10-17T17:23:49 IST" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:34:33 IST" name="acConfig" finished-at="2023-10-09T15:34:35 IST" duration-ms="2190" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileTest@5c6648b0]" started-at="2023-10-17T17:23:49 IST" name="acConfig" finished-at="2023-10-17T17:23:51 IST" duration-ms="2196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest@128d2484]" started-at="2023-10-09T15:34:35 IST" name="asConfig" finished-at="2023-10-09T15:34:47 IST" duration-ms="11875" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:com.iprovision.CredentialProfiles.AddNewCredentialProfileTest@5c6648b0]" started-at="2023-10-17T17:23:51 IST" name="asConfig" finished-at="2023-10-17T17:23:51 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- com.iprovision.CredentialProfiles.AddNewCredentialProfileWithCredentialSetTest -->
+      </class> <!-- com.iprovision.CredentialProfiles.AddNewCredentialProfileTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

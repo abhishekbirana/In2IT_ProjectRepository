@@ -9,7 +9,7 @@
   
   <test thread-count="5" parallel="tests" name="Test-Runner-2">
     <classes>
-      <class name="com.iprovision.CredentialProfiles.AddNewCredentialProfileTest"/>
+      <class name="com.iprovision.NetworkModelling.AddSiteInNetworkModellingTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -60,7 +60,8 @@ public class CredentialProfilesPage extends WebDriverUtility {
 	@FindBy(xpath = "//div[@class='messageDiv']//p")
 	private WebElement successfulValidationMessage;
 	
-	
+	@FindBy(xpath = "//label[@class='me-2 fs-10px ps-0']")
+	private WebElement textWord;
 	
 	// initialization
 	public CredentialProfilesPage(WebDriver driver)
@@ -139,6 +140,11 @@ public class CredentialProfilesPage extends WebDriverUtility {
 	public String getValidationMessage()
 	{
 		return successfulValidationMessage.getText();
+	}
+	
+	public String get_ShowDD_EntriesTextWord(WebDriver driver)
+	{
+		return textWord.getText();
 	}
 	
 }

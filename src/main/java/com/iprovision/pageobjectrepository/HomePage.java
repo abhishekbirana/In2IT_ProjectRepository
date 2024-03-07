@@ -28,6 +28,13 @@ public class HomePage extends WebDriverUtility{
 	@FindBy(xpath = "//div[text()='Device']")
 	private WebElement deviceBtn;
 	
+	@FindBy(xpath = "//div[text()='Network Modelling']")
+	private WebElement networkModellingBtn;
+	
+	@FindBy(xpath = "//div[text()='Sites']")
+	private WebElement sitesBtn;
+	
+	
 
 
 	// initialization
@@ -87,7 +94,17 @@ public class HomePage extends WebDriverUtility{
 	}
 	
 	
+	public void clickOnNetworkModellingBtn(WebDriver driver) throws InterruptedException 
+	{
+		Thread.sleep(5000);
+		switchToWindow(driver, "iProvision");
+		networkModellingBtn.click();
+	}
 	
+	public void clickOnSitesBtn(WebDriver driver)
+	{
+		sitesBtn.click();
+	}
 	
 	
 	

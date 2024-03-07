@@ -29,7 +29,7 @@ public class AddNewCredentialSetTest extends BaseClass {
 		CredentialSetsPage csp = new CredentialSetsPage(driver);
 		csp.clickOnThreeHorizontalDots(driver);
 		csp.clickOnNewBtn(driver);
-		
+
 		// Step 4 : Enter all required details & Click on Create Set Button
 		String transType = eUtil.readDataFromExcel("Add New Credential Set", 1, 0);
 		String name = eUtil.readDataFromExcel("Add New Credential Set", 1, 1);

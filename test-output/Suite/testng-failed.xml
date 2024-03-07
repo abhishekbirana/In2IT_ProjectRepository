@@ -1,41 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test-Runner-2(failed)">
     <classes>
-      <class name="com.iprovision.CredentialSets.UpdateCredentialSetTest">
-        <methods>
-          <include name="asConfig"/>
-          <include name="bsConfig"/>
-          <include name="bmConfig"/>
-          <include name="amConfig"/>
-          <include name="addNewCredentialSet"/>
-          <include name="bcConfig"/>
-          <include name="acConfig"/>
-        </methods>
-      </class> <!-- com.iprovision.CredentialSets.UpdateCredentialSetTest -->
-      <class name="com.iprovision.CredentialProfiles.AddNewCredentialProfileTest">
-        <methods>
-          <include name="addNewCredentialProfile"/>
-          <include name="asConfig"/>
-          <include name="bsConfig"/>
-          <include name="bmConfig"/>
-          <include name="amConfig"/>
-          <include name="bcConfig"/>
-          <include name="acConfig"/>
-        </methods>
-      </class> <!-- com.iprovision.CredentialProfiles.AddNewCredentialProfileTest -->
-      <class name="com.iprovision.CredentialProfiles.UpdateCredentialProfileTest">
+      <class name="com.iprovision.NetworkModelling.AddSiteInNetworkModellingTest">
         <methods>
           <include name="asConfig"/>
           <include name="bsConfig"/>
           <include name="bmConfig"/>
           <include name="amConfig"/>
           <include name="bcConfig"/>
-          <include name="updateCredentialProfile"/>
+          <include name="addNewSite"/>
           <include name="acConfig"/>
         </methods>
-      </class> <!-- com.iprovision.CredentialProfiles.UpdateCredentialProfileTest -->
+      </class> <!-- com.iprovision.NetworkModelling.AddSiteInNetworkModellingTest -->
+    </classes>
+  </test> <!-- Test-Runner-2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test-Runner-1(failed)">
+    <classes>
       <class name="com.iprovision.CredentialSets.AddNewCredentialSetTest">
         <methods>
           <include name="asConfig"/>
@@ -48,5 +30,5 @@
         </methods>
       </class> <!-- com.iprovision.CredentialSets.AddNewCredentialSetTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test-Runner-1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

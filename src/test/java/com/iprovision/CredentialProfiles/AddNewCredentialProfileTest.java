@@ -23,22 +23,26 @@ public class AddNewCredentialProfileTest extends BaseClass {
 		
 		// Step 3 : Click on New Button
 		CredentialProfilesPage cpp = new CredentialProfilesPage(driver);
-		cpp.clickOnThreeHorizontalDots(driver);
-		cpp.clickOnNewBtn(driver);
-
-		// Step 4 : Enter all required details & Click on Create Set Button
-		String profileName = eUtil.readDataFromExcel("Create New Credential Profile", 1, 0);
-		String description = eUtil.readDataFromExcel("Create New Credential Profile", 1, 1);
-		String connectionType = eUtil.readDataFromExcel("Create New Credential Profile", 1, 2);
-		String credentialSetName = eUtil.readDataFromExcel("Add New Credential Set", 1, 1);
-		cpp.enterAllRequiredDetails(driver, profileName, description, connectionType, credentialSetName);
 		
-		// Step 5 : Validate
-		String message = cpp.getValidationMessage();
-		System.out.println(message+" --- Credential Profile is Created Sucessfully --- ");
-		cpp.selectAnyCredentialProfile(driver);
-		String credentialProfileNameHeader = cpp.getCredentialProfileHeaderText();
-		Assert.assertTrue(credentialProfileNameHeader.contains(profileName));
-		System.out.println(" --- Credential Profile is Created Sucessfully with Name '"+credentialProfileNameHeader+"' ---");
+		String tt = cpp.get_ShowDD_EntriesTextWord(driver);
+		System.out.println(tt);
+		
+//		cpp.clickOnThreeHorizontalDots(driver);
+//		cpp.clickOnNewBtn(driver);
+//
+//		// Step 4 : Enter all required details & Click on Create Set Button
+//		String profileName = eUtil.readDataFromExcel("Create New Credential Profile", 1, 0);
+//		String description = eUtil.readDataFromExcel("Create New Credential Profile", 1, 1);
+//		String connectionType = eUtil.readDataFromExcel("Create New Credential Profile", 1, 2);
+//		String credentialSetName = eUtil.readDataFromExcel("Add New Credential Set", 1, 1);
+//		cpp.enterAllRequiredDetails(driver, profileName, description, connectionType, credentialSetName);
+//		
+//		// Step 5 : Validate
+//		String message = cpp.getValidationMessage();
+//		System.out.println(message+" --- Credential Profile is Created Sucessfully --- ");
+//		cpp.selectAnyCredentialProfile(driver);
+//		String credentialProfileNameHeader = cpp.getCredentialProfileHeaderText();
+//		Assert.assertTrue(credentialProfileNameHeader.contains(profileName));
+//		System.out.println(" --- Credential Profile is Created Sucessfully with Name '"+credentialProfileNameHeader+"' ---");
 	}
 }

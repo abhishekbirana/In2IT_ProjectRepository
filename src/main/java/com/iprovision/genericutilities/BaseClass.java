@@ -152,8 +152,8 @@ public class BaseClass {
 	public void asConfig() throws IOException
 	{
 		
-		SendMailWithAttachment smwa = new SendMailWithAttachment();
-		smwa.sendingEmail("abhishek.birana@in2ittech.com","sagar.mehra@in2ittech.com","This email sent using JavaMailer API from Automation Testing!!!","This is sample message for Testing Purpose by Abhishek Birana");
+//		SendMailWithAttachment smwa = new SendMailWithAttachment();
+//		smwa.sendingEmail("abhishek.birana@in2ittech.com","sagar.mehra@in2ittech.com","This email sent using JavaMailer API from Automation Testing!!!","Testing Report by Abhishek Birana");
 		System.out.println(" =====> Database closed Successfully <===== ");
 	}
 	
